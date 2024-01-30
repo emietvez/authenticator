@@ -25,12 +25,12 @@ class StoreUser extends Component
         return [
             'firstName' => 'required|string|min:3',
             'lastName' => 'required|string',
-            'email' => 'required|email|unique:users' . ($this->user ? ',' . $this->user->id : ''),
+            'email' => 'required|email|unique:users,email,' . ($this->user ? $this->user->id : ''),
             'password' => 'nullable|min:6',
             'phone' => 'nullable|min:9'
         ];
     }
-
+    
     public function mount($id = null)
     {
         if ($id) {
