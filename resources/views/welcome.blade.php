@@ -13,7 +13,7 @@
                 @else
                 <a href="{{ route('login') }}"
                     class="font-semibold text-gray-900 hover:text-gray-900 dark:text-gray-900 dark:hover:text-white bg-purple-500 py-2 px-4 rounded-full focus:outline focus:outline-2 focus:rounded-full focus:outline-gray-900">
-                    Ingresar
+                    Get into
                 </a>
                 @endauth
             </div>
